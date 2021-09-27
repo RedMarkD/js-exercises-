@@ -15,6 +15,8 @@ const wrapWithTag = (content, tagname) => `<${tagname}>${content}</${tagname}>`;
 
 const startsWithThe = title => title.startsWith(`the`);
 
+
+
 const createList = movies => {
   return `
     <ol>${movies
@@ -24,5 +26,5 @@ const createList = movies => {
       .join(``)}
     </ol>`;
 };
-
+console.log(movies)
 document.write(createList(movies));
