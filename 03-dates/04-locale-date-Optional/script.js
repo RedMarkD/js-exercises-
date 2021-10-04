@@ -25,6 +25,7 @@ function dateWrite() {
     let year = today.getFullYear();
     let hour = today.getHours();
     let min = today.getMinutes();
+    if (min < 10) {min = "0"+min;}
 
     document.getElementById("target").innerHTML = day+" " +date+" "+month+" "+year+", "+hour+"h"+min
 

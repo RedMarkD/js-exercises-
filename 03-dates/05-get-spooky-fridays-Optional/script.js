@@ -20,25 +20,25 @@
 *
 * */
 // array.forEach(function(currentValue, index, arr), thisValue),
-const nummonths = ["0","1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"]
+const nummonths = ["0","1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"];
 const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-console.log(nummonths)
-
+console.log(nummonths);
 
 function thiCheck(){
-    months.forEach()
+    let year = document.getElementById("year").value;
+    console.log(year);
+    nummonths.forEach(month =>
     {
-    let year = document.getElementById("year");
-    let d = new Date(year, nummonths, 13);
+    let d = new Date(year, month, 13);
+    console.log(d);
     let day = d.getDay();
     if (day === 5) {
-            document.getElementById("target").innerHTML = months[nummonths]
+        document.getElementById("target").innerHTML += "</br>";
+            document.getElementById("target").innerHTML += months[month] ;
         }
-}
+})
 
 }
-
-
 document.getElementById("run").addEventListener("click", thiCheck)
 
 //document.getElementById("target").innerHTML = dify
