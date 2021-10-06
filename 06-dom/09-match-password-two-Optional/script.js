@@ -11,6 +11,18 @@
 
 (function() {
 
-    // your code here
+    document.getElementById("run").addEventListener("click", function () {
+        console.log('0');
+        let pwOne = document.getElementById("pass-one").value;
+        let pwTwo = document.getElementById("pass-two").value;
+        if (pwOne === pwTwo) {
+            //document.getElementById("run").innerHTML = "Good";
+        }
+        else {
+            document.getElementById("pass-one").setAttribute("class", "error");
+            document.getElementById("pass-two").setAttribute("class", "error");
+        }
+    }
+)
 
 })();
