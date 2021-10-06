@@ -8,15 +8,16 @@
 
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
+document.getElementById("run").addEventListener("click", function() {
+    let input = document.getElementById("number").value;
+    console.log(input);
+    let nrInput = parseInt(input)
+    let output = 1
+    for (let i = 1; i < nrInput; i++) {
+        output *= i;
+        //console.log(output);
+    }
+    console.log(output);
+    document.getElementById("number").value = output;
 
-(function() {
-    
-    // to get the value of an input: document.getElementById("element-id").value
-
-    document.getElementById("run").addEventListener("click", function() {
-
-        // your code here
-
-    });
-
-})();
+        });

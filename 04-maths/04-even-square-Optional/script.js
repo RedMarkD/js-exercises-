@@ -9,12 +9,15 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
-
-    document.getElementById("run").addEventListener("click", function() {
+document.getElementById("run").addEventListener("click", function() {
+    for (let i=1; i<22; i++){
+        let two = i*i;
+        let it= document.getElementById("target").innerHTML += "<br>"
+        let metwo = document.getElementById("target").innerHTML += two;
+            console.log(metwo);
+    }
 
         // your code here
 
     });
 
-})();
